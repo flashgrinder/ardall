@@ -1,0 +1,116 @@
+@charset 'UTF-8';
+/* Slider */
+/*.slick-loading .slick-list
+/* Arrows */
+/*.slick-prev,
+.slick-next
+{ 
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1.0;
+}
+.slick-prev
+{
+    left:-3.5%;
+	z-index:2;
+}
+.slick-prev:before
+{
+    content: url(../images/prev.png);
+    opacity: 0.4;
+}
+.slick-next
+{
+    right: -6.3%;
+	z-index:2;
+}
+.slick-next:before
+{
+    content: url(../images/next.png);
+    opacity: 0.4;
+}
+
+/* Dots*/ 
+.slick-dotted.slick-slider
+{
+    margin-bottom: 40px;
+}
+.slick-dots
+{
+    position: absolute;
+    bottom: -20px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 0 1%;
+    padding: 0;
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 12px;
+    line-height: 0;
+    display: block;
+    width: 22px;
+    height: 20px;
+    padding: 5px;
+    color:rgba(50, 50, 50, 1);
+    cursor: pointer;
+    border-radius: 25%;
+    border: 2px solid rgba(58,145,214,1.00);
+    box-shadow:0 1px 2px;
+    background: rgba(223,244,89, 0.65);
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 12px;
+    line-height: 35px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '__';
+    text-align:end;    
+    opacity: .05;
+    color: rgba(0,0,0,0.8);
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: 1;
+    color: red;
+	margin: 0 -5px;
+}

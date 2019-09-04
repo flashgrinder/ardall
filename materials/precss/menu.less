@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+.topMenu{
+	margin: -15px 0 0 0;
+	.wrapper{
+		nav{
+			background: url(../images/fon/border_stripe.png) 0 0 repeat-x, 
+				        url(../images/fon/border_stripe.png) 0 100% repeat-x, 
+			-webkit-linear-gradient(90deg,rgba(200,200,200,1.00) 5.70%,rgba(160,160,160,1.00) 28.50%,rgba(110,110,110,1.00) 50.25%,rgba(50,50,50,1.00) 71.51%,rgba(0,0,0,1.00) 100%);
+			border-radius: 0 0 10px 10px;
+			.menuToggle{
+					display: none;
+					cursor: pointer;
+					color: rgba(223,244,89,1.00);
+					font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+					.xs-block({
+						display: inline-block;
+						padding: 10px;
+					});
+				img{
+				}
+			}
+			.menu{
+				.row-flex();
+				.col();
+				justify-content: space-around;
+					.xs-block({
+						display: none;
+						position: absolute;
+						width: calc(100%-@offset/3.8);
+						background: /*url(../images/fon/border_stripe.png) 0 0 repeat-x,*/ 
+				url(../images/fon/border_stripe.png) 0 100% repeat-x, 
+				-webkit-linear-gradient(90deg,rgba(200,200,200,1.00) 5.70%,rgba(160,160,160,1.00) 28.50%,rgba(110,110,110,1.00) 50.25%,rgba(50,50,50,1.00) 71.51%,rgba(0,0,0,1.00) 100%);
+						border-radius: 0 0 10px 10px;
+						margin: -5px auto;
+					});
+				li{
+					padding: 10px;
+					margin: 10px;
+					.xs-block({
+							border-radius: 25px;
+							box-shadow: 3px 3px 4px rgba(221,221,221,1.00);
+							text-align: center;
+					});
+					.xxs-block({
+						float: none;
+					});
+					a{
+						color: @greenMenu;
+						font-size: 1.2rem;
+						font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+						&:hover{
+							text-decoration:underline;
+						}
+						
+					}
+				}
+			}
+		}
+		
+	}
+}

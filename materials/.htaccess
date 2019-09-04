@@ -1,0 +1,20 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.ardall.ru$ [NC]
+RewriteRule ^(.*)$ http://ardall.ru/$1 [R=301,L]
+
+AddType application/octet-stream .doc .mov .avi .pdf .xls .mp4
+
+Redirect 301 /proizvodstvo.html http://ardall.ru/proektirovanie.html
+
+ErrorDocument 404 "/404.html"
+
+RemoveHandler .php .htm .html
+AddType application/x-httpd-php .html .htm
+
+AddDefaultCharset utf-8
+AddCharset utf-8 *
+<IfModule mod_charset.c>
+CharsetSourceEnc utf-8
+CharsetDefault utf-8
+</IfModule>
