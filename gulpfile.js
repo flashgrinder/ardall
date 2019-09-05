@@ -17,7 +17,8 @@ let gulp          = require('gulp'),
 	gutil         = require('gulp-util'),
 	babel         = require('gulp-babel'),
 	del           = require('del'),
-	pug           = require('gulp-pug');
+	pug           = require('gulp-pug'),
+	rename        = require('gulp-rename');
 
 const source = {
 	root: './app',
@@ -31,6 +32,7 @@ const source = {
 		js:    './app/js/',
 		libs:  [
 			// './app/libs/jquery-3.3.1.js',
+			'./app/libs/swiper.js',
 			'./app/libs/common.js'
 		]
 	},
@@ -54,7 +56,7 @@ const source = {
 function pugproc() {
 	return gulp.src(source.app.pug)
 	.pipe(pug({pretty: true}))
-	.pipe(gulp.dest(source.root))
+	.pipe(gulp.dest(source.root));
 }
 
 function sassproc() {
