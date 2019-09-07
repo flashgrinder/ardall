@@ -11,8 +11,12 @@ html(lang="ru")
 		meta(name="apple-mobile-web-app-status-bar-style" content="#000")
 		title= pageTitle
 		link(rel="stylesheet" href="css/style.min.css")
+		script(src="js/scripts.min.js")
 	body
-		include ../../tmp/grid
+		//- include ../../tmp/grid
+		// Header
 		include ../header/header
+		// Slider
+		include ../slider/slider
 		block content
 		include ../footer/footer

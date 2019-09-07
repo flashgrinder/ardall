@@ -9,33 +9,125 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#000">
     <title>Главная</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/scripts.min.js"></script>
   </head>
   <body>
-    <div class="debug">
-      <div>
-        <div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+    <!-- Header-->
+    <header class="header">
+      <div class="wrapper">
+        <div class="headerBlocks">
+          <div class="headerBlocks__logo"><a href="index.html"><img src="img/logo/logoNew.png" alt=""></a></div>
+          <address class="headerBlocks__address">
+            <div class="address-phone">Мобильный: <span>+7 918 168 70 00</span></div>
+            <div class="address-phone">Рабочий: <span>+7 8617 61-92-16</span></div>
+            <div class="address-email">Email: <span>manager@ardall.ru</span></div>
+          </address>
+        </div>
+        <!-- Menu-->
+        <div class="menuBlocks">
+          <nav class="menuBlocks__link">
+            <ul>
+              <li class="from-left"><a href="#">Главная</a></li>
+              <li class="from-left"><a href="#">Наши услуги</a></li>
+              <li class="from-left"><a href="#">Отопление</a></li>
+              <li class="from-left"><a href="#">Портфолио</a></li>
+              <li class="from-left"><a href="#">Товары</a></li>
+              <li class="from-left"><a href="#">Вопросы</a></li>
+              <li class="from-left"><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="menuBlocks__burger"><span class="line"></span></div>
+        </div>
+      </div>
+    </header>
+    <!-- Slider-->
+    <div class="slider">
+      <div class="wrapper">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/slider-header/slide_1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/slider-header/slide_2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/slider-header/slide_3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/slider-header/slide_4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/slider-header/slide_5.jpg" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-text">
+            <h1>Отопление. Вентиляция. Кондиционирование <br> Поставка и монтаж вентиляционного оборудования, сплит систем</h1>
+          </div>
         </div>
       </div>
     </div>
-    <h1>Pug - node template engine!!!!!!!</h1>
-    <div class="col" id="container">
-      <p>
-        Pug is a terse and simple templating language with a
-        strong focus on performance and powerful features.
-      </p>
-    </div>
-    <script src="js/scripts.min.js"></script>
+    <!-- Main-->
+    <main class="main">
+      <div class="wrapper">
+        <!-- Content-->
+        <section class="contentBlock">
+          <div class="contentBlock__text">
+            <h2 class="contentBlock__title">Ардалл Инжиниринг</h2>
+            <div class="contentBlock__about">
+              <div class="contentBlock__photo"><img src="https://dummyimage.com/800x400/aeaeae/fff.jpg" alt=""></div>
+              <div class="contentBlock__descr">
+                <p>Профиль компании Ардалл инжиниринг - поставка и монтаж вентиляционного оборудования, сплит ситем, промышленных кондиционеров для зданий и сооружений различного назначения с соблюдением норм, стандартов и регламентов.</p>
+                <p>Мы используем вентиляционное оборудование, промышленные кондиционеры, и сплит системы хорошо зарекомендовавшие себя в работе, проверенные временем, известных и надежных производителей.</p>
+                <p>Для нас важно, работа должна быть выполнена на высоком уровне, а климатическая техника и вентиляционные установки отработали весь срок службы, без поломок.</p>
+                <p>Мы работаем с отечественными и импортными производителями вентиляционных установок, промышленных кондиционеров, бытовых сплит систем. Все установленное оборудование проверяем надлежащим образом, также проводим мониторинг работоспособности и отказоустойчивости оборудования.</p>
+                <p>Занимаемся поставкой и установкой бытовых кондиционеров и сплит систем, применяемых в квартирах и частных домах. Используем полупромышленные, промышленные, канальные сплит системы при кондиционировании помещений общественного назначения(кафе, магазины, развлекательные клубы). Чиллеры, ККБ, крышные кондиционеры, руфтопы для достижения комфортного микроклимата в больших торговых центрах и гипермаркетах.</p>
+              </div>
+            </div>
+            <h2 class="contentBlock__title">Производство воздуховодов и фасонных изделий</h2>
+            <div class="contentBlock__about">
+              <div class="contentBlock__photo"><img src="https://dummyimage.com/600x400/aeaeae/fff.jpg" alt=""></div>
+              <div class="contentBlock__descr">
+                <p>Ардалл Инжиниринг имеет свой производственный цех по изготовлению деталей систем вентиляции из оцинкованной и нержавеющей стали любого вида и сложности.</p>
+                <p>Обратившись к нам Вы получаете не только минимальные сроки реализации проекта, но и высокое качество производимых нами изделий и гарантированно низкие цены.</p>
+              </div>
+            </div>
+            <h2 class="contentBlock__title">Обслуживание вентиляции и систем кондиционирования</h2>
+            <div class="contentBlock__about">
+              <div class="contentBlock__photo"><img src="https://dummyimage.com/600x400/aeaeae/fff.jpg" alt=""></div>
+              <div class="contentBlock__descr">
+                <p>Проводим сезонное обслуживание систем вентиляции, различного вентиляционного оборудования, приточно вытяжных систем, МВО.</p>
+                <p>Обслуживание канальных кондиционеров, полупромов и промышленных, мультизональных систем кондиционирования. Чистка бытовых сплит систем.</p>
+                <p>Ремонт и замена оборудования, канальных вентиляторов, радиальных вентиляторов, дополнительного вентиляционного обрудования. Модернизация существующей системы вентиляции.</p>
+              </div>
+            </div>
+            <h2 class="contentBlock__title">В перечень наших задач входит:</h2>
+            <div class="contentBlock__about">
+              <div class="contentBlock__list">
+                <ul>
+                  <li>Разработка тех.задания (в случае его отсутствия).</li>
+                  <li>Проектирование вентиляционных сетей.</li>
+                  <li>Подбор вентиляционного и климатического оборудования.</li>
+                  <li>Расчет мощности оборудования и кондиционеров.</li>
+                  <li>Оценка финансовой целесообразности оборудования.</li>
+                  <li>Поставка вентиляционной и климатической техники.</li>
+                  <li>Монтаж вентиляции и кондиционеров бытового и промышленного назначения.</li>
+                  <li>Испытания техники и ввод в эксплуатацию.</li>
+                  <li>Обслуживание вентиляционных сетей и кондиционеров.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Sidebar-->
+          <aside class="contentBlock__sidebar">
+            <h2 class="contentBlock__title">Сплит системы</h2>
+            <div class="contentBlock__descr">
+              <p>В продаже имеются сплит системы бытового и промышленного назначения.</p>
+              <p>Большой выбор, а если не определились с маркой кондиционера, звоните Нам.</p>
+            </div>
+            <div class="contentBlock__brand"><a href="#"><img src="img/brand/tosot.png" alt=""></a><a href="#"><img src="img/brand/lessar.png" alt=""></a><a href="#"><img src="img/brand/quattroclima.png" alt=""></a><a href="#"><img src="img/brand/fujitsu.png" alt=""></a></div>
+            <div class="contentBlock__descr">
+              <p>Менеджер даст полную консультацию по телефону, поможет с выбором как модели так и марки сплит системы.</p>
+              <p>Наша бригада монтажников доставит сплит систему вам домой, установит кондиционер в кратчайшие сроки.</p>
+              <p>Грамотная и качественная установка сплит системы, нашими специалистами, позолит не беспокоиться о сроке службы кондиционера.</p>
+              <p>Гарантируем соблюдение всех технических норм при монтаже сплит ситемы, и даем гарантию 3 года на все технические услуги.</p>
+              <p>Гарантия на все сплит системы 3 года.</p>
+            </div>
+          </aside>
+        </section>
+      </div>
+    </main>
+    <footer class="footer"></footer>
   </body>
 </html>
