@@ -5,18 +5,19 @@ html(lang="ru")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
-		meta(name="og:image" content="../images/social.png")
 		meta(name="robots" content="index, follow")
 		meta(name="theme-color" content="#000")
 		meta(name="apple-mobile-web-app-status-bar-style" content="#000")
 		title= pageTitle
+		link(rel="shortcut icon" href="img/favicon.ico")
 		link(rel="stylesheet" href="css/style.min.css")
 		script(src="js/scripts.min.js")
 	body
 		//- include ../../tmp/grid
 		// Header
 		include ../header/header
-		// Slider
-		include ../slider/slider
+		// Slider Header
+		include ../slider/slider_header
 		block content
+		// Footer
 		include ../footer/footer
